@@ -25,8 +25,8 @@ public class BaseTest {
         options.addArguments("--remote-allow-origins=*");
         options.addArguments("--headless");
         options.addArguments("--start-maximized");
-        options.addArguments("--disable-extensions");
-        options.addArguments("--disable-infobars");
+//        options.addArguments("--disable-extensions");
+//        options.addArguments("--disable-infobars");
         driver = new ChromeDriver(options);
         steps = new GoogleSteps(driver);
         context.setAttribute("driver", driver);
